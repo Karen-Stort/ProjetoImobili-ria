@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:root{
+  --cor1: #2D727C;
+  --cor2:#5FA2AC;
+  --cor3:#62DFAB;
+  --cor4:#252B2C;
+  --cor5:#ffff;
+}
+
+@font-face {
+  font-family: 'Humanist777';
+  src: url(/tipografia/Humanist\ 777\ Black\ BT.ttf)format('opentype');
+}
+
+@font-face {
+  font-family: 'Humanisti521BT';
+  src: url(/tipografia/Humanist521BT.ttf)format('opentype');
+}
+
+@font-face {
+  font-family: 'Humanisti521LBT';
+  src: url(/tipografia/Humanist521LightBT.ttf)format('opentype');
+}
+
+:root{
+  --font-black: "Humanist777";
+  --font-bt: "Humanisti521BT";
+  --font-lbt:"Humanisti521LBT";  
+}
+
+.container {
+  background-image: url('/img/fundo.jpg') ; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.content {
+  margin-top: 80px;
+  padding-left: 170px;
+  width: 650px;
+  height: 70px;
+} 
+
+
+.titulo-content  {
+  color: var(--cor5);
+  font-size: 3rem;
+  font-family: var(--font-black) ; 
+  text-shadow: 15px 15px 15px rgba(102, 101, 101, 0.74);
+
+}
+
+.h3{
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.h4{
+  font-size: 80%;
+  font-weight: bolder ;
+  
+}
+
+.button-container {
+  padding: 20px;
+  text-align: center;
+} 
+
+
+.botoes {
+  padding-top: 15px ;
+  margin-bottom: 15px;
+  background-color: black;
+  cursor: pointer;
+  display: grid;
+  width: 600px;
+  height: 70px;
+  font-family: var(--font-lbt);
+  color:var(--cor5);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.grid{
+  display: flex;
+  padding-left: 130px; 
+  
+}
+
+#logo img{
+  width: 130%;
+  height: 70%;
+  margin: 70px;
+  display: grid;
+  margin-top: 20px;
+  margin-left: 80px;
+  filter: drop-shadow(30px 0 30px #ffffff);
+
+}
+
+.contato{
+  font-family: var(--font-black);
+  color:rgb(41, 41, 165);  
+  text-shadow: 0.1em 0.1em 0.1em rgba(255, 255, 255, 0.74) ;
+  margin-top: 70px;
+  margin-left: 500px;
+  font-size: 1.8rem;
+  -webkit-text-stroke: 0.3px #ffffff;
+  
+}
+
+.contact{
+  width: 500px;
+  height: auto;
+  padding-bottom: 10px;
+  
+}
+
+#whats{
+  border-radius: 10px;
+  background-color: black;
+  font-family: var(--font-bt);
+  color:var(--cor5);
+  font-weight:lighter;
+  text-decoration: none; 
+
+  font-size: 2rem; 
+  width: 450px;
+  height: 60px;
+  
+}
+
+.icone-whats{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(252, 252, 252);
+  text-align: end;
+}
+
+#rodape{
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  align-items: center;
+  background-color: var(--cor4);
+  color: var(--cor5);
+  opacity: 0.7;
+  font-size: 4rem;
+  font-family: var(--font-lbt);
+  position: absolute;
+  bottom: 0;
+}
